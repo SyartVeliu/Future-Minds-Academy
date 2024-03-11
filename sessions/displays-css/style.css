@@ -1,0 +1,31 @@
+ body{
+    margin-top: 100px;
+    margin-left: 400x;
+ }
+
+ nav{
+    width: 400px;
+    height: 100vh;
+    margin-bottom: 20px;
+    background-color: azure;
+    padding-top: 100px;
+ }
+ nav a{
+    display: block;
+ }
+ 
+ .myProducts{
+    padding: 40px;
+    border: 1px solid red;
+ }
+
+ .myFolio{
+    display: block;
+    padding: 40px;
+    border: 1px solid red;
+ }
+
+ .myReach{
+    padding: 40px;
+    border: 1px solid red;
+ }

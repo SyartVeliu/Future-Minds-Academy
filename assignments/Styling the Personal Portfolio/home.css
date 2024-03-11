@@ -1,0 +1,257 @@
+body {
+    background-size: cover;
+    text-align: center;
+    font-family: sans-serif;
+    margin: auto;
+    background-image: url(images/backgroundii.jpg);
+    cursor: url(images/icon6.ico);
+}
+
+hr {
+    width: 80%;
+}
+
+h1 {
+    color: rgb(0, 0, 0);
+    font-size: 3rem;
+    margin-left: 35px;
+    font-family: Madimi One;
+}
+
+h2 {
+    padding-top: 10px;
+}
+
+header {
+    align-items: center;
+}
+
+nav {
+    text-transform: none;
+    padding: 10px;
+    margin: 20px;
+    text-indent: length;
+    text-decoration: none;
+    margin-left: -15px;
+}
+
+ul {
+    list-style-type: none;
+    border-radius: 15px;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+li.project {
+    display: inline;
+    background-color: aqua;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    margin-right: 15px;
+}
+
+li.project:hover {
+    display: inline;
+    background-color: aqua;
+    padding: 15px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    margin-right: 15px;
+    font-size: 17px;
+}
+
+li.contact {
+    display: inline;
+    background-color: aqua;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    margin-left: 15px;
+}
+
+li.contact:hover {
+    display: inline;
+    background-color: aqua;
+    padding: 15px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    margin-left: 15px;
+    font-size: 17px;
+}
+
+img {
+    width: 30%;
+}
+
+article {
+    background-color: rgb(255, 255, 130);
+    align-content: center;
+    border-bottom: 80%;
+    width: 80%;
+    margin-top: 50px;
+    margin-left: 10%;
+    border-radius: 15px;
+    height: 600px;
+}
+
+article:hover {
+    background-color: rgb(255, 255, 50);
+    align-content: center;
+    border-bottom: 80%;
+    width: 80%;
+    margin-top: 50px;
+    margin-left: 10%;
+    border-radius: 15px;
+    height: 630px;
+    border-style: solid;
+    font-size: 19px;
+}
+
+.education {
+    background-color: rgb(255, 130, 255);
+    text-align: left;
+    border-bottom: 80%;
+    width: 80%;
+    margin-top: 50px;
+    margin-left: 10%;
+    border-radius: 15px;
+    height: 700px;
+    font-family: Anton;
+    justify-content: center;
+    margin-right: 50px;
+}
+
+.education:hover {
+    background-color: rgb(255, 50, 255);
+    border-bottom: 80%;
+    width: 80%;
+    margin-top: 50px;
+    margin-left: 10%;
+    border-radius: 15px;
+    height: 735px;
+    border-style: solid;
+}
+
+.primaryschool {
+    background-color: rgb(255, 255, 255);
+    padding: 30px;
+    width: 1000px;
+}
+
+.primaryschool:hover {
+    background-color: rgb(255, 255, 255);
+    padding: 40px;
+    width: 1000px;
+    align-items: center;
+    font-size: 18px;
+    border-style: solid;
+}
+
+.highschool {
+    background-color: rgb(255, 255, 255);
+    padding: 30px;
+    width: 1000px;
+    align-items: center;
+}
+
+.highschool:hover {
+    background-color: rgb(255, 255, 255);
+    padding: 40px;
+    width: 1000px;
+    align-items: center;
+    font-size: 18px;
+    border-style: solid;
+}
+
+.university {
+    background-color: rgb(255, 255, 255);
+    padding: 30px;
+    width: 1000px;
+    align-items: center;
+}
+
+.university:hover {
+    background-color: rgb(255, 255, 255);
+    padding: 40px;
+    width: 1000px;
+    align-items: center;
+    font-size: 18px;
+    border-style: solid;
+}
+
+.it {
+    background-color: rgb(255, 255, 255);
+    padding: 30px;
+    width: 1000px;
+    align-items: center;
+}
+
+.it:hover {
+    background-color: rgb(255, 255, 255);
+    padding: 40px;
+    width: 1000px;
+    align-items: center;
+    font-size: 18px;
+    border-style: solid;
+}
+
+.programming {
+    background-color: rgb(255, 255, 255);
+    padding: 30px;
+    width: 1000px;
+    align-items: center;
+}
+
+.programming:hover {
+    background-color: rgb(255, 255, 255);
+    padding: 40px;
+    width: 1000px;
+    align-items: center;
+    font-size: 18px;
+    border-style: solid;
+}
+
+.madimi-one-regular {
+    font-family: "Madimi One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.myskills {
+    background-color: rgb(92, 90, 255);
+    align-content: center;
+    border-bottom: 80%;
+    width: 80%;
+    margin-top: 50px;
+    margin-left: 10%;
+    border-radius: 15px;
+    height: 150px;
+}
+
+.projects {
+    background-color: rgb(255, 109, 206);
+    text-align: left;
+    border-bottom: 80%;
+    width: 80%;
+    margin-top: 50px;
+    margin-left: 10%;
+    border-radius: 15px;
+    height: 150px;
+}
+
+.fundi {
+    background-color: rgb(22, 22, 22);
+    text-align: left;
+    border-bottom: 80%;
+    width: 80%;
+    margin-top: 50px;
+    margin-left: 10%;
+    border-radius: 5px;
+    height: 50px;
+    color: white;
+    text-align: center;
+}
