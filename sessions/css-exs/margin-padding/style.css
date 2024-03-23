@@ -1,0 +1,7 @@
+.all-cards{
+    display: flex;
+    gap: 20px;
+}
+.all-cards img{
+    max-width: 300px;
+}
