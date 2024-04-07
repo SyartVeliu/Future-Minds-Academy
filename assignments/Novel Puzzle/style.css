@@ -1,0 +1,19 @@
+.krejt{
+    border: 1px solid black;
+    width: 70%;
+    padding: 15px;
+    font-size: 20px;
+}
+
+.L{
+    font-size: 60px;
+}
+
+.OREM{
+    font-size: 25px;
+}
+
+.underline{
+    width: 5px;
+    text-decoration-color: red;
+}
