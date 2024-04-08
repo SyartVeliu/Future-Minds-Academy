@@ -1,0 +1,18 @@
+body {
+    background-image: url(f1.jpg);
+    color: white;
+}
+
+header {
+    background: rgb(23, 0, 116);
+    background: linear-gradient(90deg, rgba(23, 0, 116, 1) 26%, rgba(255, 0, 129, 1) 73%);
+}
+
+nav {
+    background: rgba(1, 1, 1, 0.50);
+}
+
+section {
+    background: rgb(23, 0, 116);
+    background: linear-gradient(90deg, rgba(23, 0, 116, 1) 26%, rgba(255, 0, 129, 1) 73%);
+}
