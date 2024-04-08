@@ -1,0 +1,23 @@
+body {
+    font-family: cursive;
+    font-size: 1em;
+}
+
+.klasa1 {
+    background-color: gray;
+    color: white;
+    height: 25vh;
+}
+
+.klasa2 {
+    background-color: antiquewhite;
+    color: black;
+    height: 25vh;
+}
+
+hr {
+    width: 33%;
+    height: 3px;
+    background-color: red;
+    border: none;
+}
