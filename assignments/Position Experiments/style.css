@@ -1,0 +1,84 @@
+.seksioni1 {
+    width: 60%;
+    border: 1px dashed white;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 0 7px #333;
+    margin-top: 70px;
+    margin-left: 20px;
+}
+  
+  .seksioni2 {
+    width: 60%;
+    border: 1px dashed white;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 0 7px #333;
+    margin-top: 70px;
+    margin-left: 20px;
+  }
+  
+  .seksioni3 {
+    width: 60%;
+    border: 1px dashed white;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 0 7px #333;
+    margin-top: 70px;
+    margin-left: 20px;
+  }
+  
+  .seksioni4 {
+    width: 60%;
+    border: 1px dashed white;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 0 7px #333;
+    margin-top: 70px;
+    margin-left: 20px;
+  }
+  
+  .seksioni5 {
+    width: 60%;
+    border: 1px dashed white;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 0 7px #333;
+    margin-top: 70px;
+    margin-left: 20px;
+  }
+  
+
+  .titulli1{position: absolute; top: 25px; left: 35px; font-size: 30px; letter-spacing: 0.05cm; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;}
+  
+  .titulli2{position: absolute; top: 195px; left: 35px; font-size: 30px; letter-spacing: 0.05cm; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;}
+  
+  .titulli3{position: absolute; top: 370px; left: 35px; font-size: 30px; letter-spacing: 0.05cm; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;}
+  
+  .titulli4{position: absolute; top: 540px; left: 35px; font-size: 30px; letter-spacing: 0.05cm; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;}
+  
+  .titulli5{position: absolute; top: 713px; left: 35px; font-size: 30px; letter-spacing: 0.05cm; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;}
+
+
+ .remove1{position: absolute; top: 60px; left: 847px;}
+ .remove2{position: absolute; top: 230px; left: 847px;}
+ .remove3{position: absolute; top: 400px; left: 847px;}
+ .remove4{position: absolute; top: 570px; left: 847px;}
+ .remove5{position: absolute; top: 742px; left: 847px;}
+  
+
+ .videoja{
+  position: fixed;
+  top: 360px;
+  right: 15px;
+  border: 1px solid black;
+  border-radius: 10%;
+  padding: 10px;
+ }
+
+ .paragrafi{
+  position: fixed;
+  font-size: 20px;
+  top: 355px;
+  left: 1100px;
+ }
