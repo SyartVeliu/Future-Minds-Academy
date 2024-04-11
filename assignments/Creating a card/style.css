@@ -1,0 +1,47 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+.card{
+    width: 300px;
+    border: 2px solid black;
+}
+ .pic{
+    width: 100%;
+ }
+ .cardheader{
+    display: flex;
+ }
+ .cardtop{
+    width: 50%;
+    border: 2px solid black;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+ }
+ .cardsecond{
+    width: 50%;
+    border: 2px solid black;
+    text-align: center;
+    padding: 20px;
+ }
+ .cardbodyimage{
+    border: 2px solid black;
+    width: 100%;
+ }
+ .cardbodyp{
+position: absolute;
+top: 10px;
+left: 0px;
+color: white;
+ }
+ .cardbody{
+    position: relative;
+ }
+ .topcard{
+    display: flex;
+    gap: 3rem;
+    flex-wrap: wrap;
+ }

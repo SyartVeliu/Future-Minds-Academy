@@ -1,0 +1,62 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    background-color: rgb(163, 163, 163);
+    text-align: center;
+    padding: 25px;
+}
+
+nav {
+    background-color: rgb(34, 34, 34);
+    text-align: center;
+    padding: 12px;
+    color: white;
+}
+
+aside {
+    background-color: rgb(132, 69, 138);
+    width: 20%;
+    float: left;
+    height: 330px;
+    padding: 10px;
+}
+
+section {
+    background-color: rgb(255, 116, 116);
+    width: 40%;
+    float: left;
+    height: 330px;
+    padding: 10px;
+}
+
+article {
+    background-color: rgb(90, 90, 255);
+    width: 40%;
+    float: left;
+    height: 330px;
+    padding: 10px;
+}
+
+footer {
+    background-color: rgb(116, 116, 116);
+    display: block;
+    padding: 25px;
+    text-align: center;
+    padding: 25px;
+    clear: both;
+}
+
+@media screen and (max-width:600px) {
+
+    aside,
+    section,
+    article {
+        width: 100%;
+    }
+}

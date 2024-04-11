@@ -1,0 +1,81 @@
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        margin-top: 0;
+        margin-left: 0;
+    }
+
+    aside {
+        width: 30%;
+        height: 656px;
+        background-color: #27298f;
+        color: white;
+        font-size: 20px;
+        text-align: right;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        flex-direction: row-reverse;
+        padding: 20px;
+    }
+
+    .pjesa1 {
+        font-size: 40px;
+        font-family: "Tilt Neon", sans-serif;
+    }
+
+    .pjesa2 {
+        font-family: "M PLUS 1 Code", monospace;
+    }
+
+
+    .llogin {
+        border: 5px solid rgb(216, 216, 216);
+        border-radius: 3px;
+        padding: 10px;
+        font-size: 20px;
+        font-family: "Tilt Neon", sans-serif;
+    }
+
+    .artikulli1{
+        width: 70%;
+        float: right;
+        padding: 30px;
+        position: absolute;
+        font-size: 17px;
+        top: 0px;
+        right: 0px;
+    }
+
+    .vija1{
+        width: 100%;
+    }
+
+    .artikulli2{
+        width: 70%;
+        float: right;
+        padding: 30px;
+        font-size: 17px;
+        position: absolute;
+        top: 300px;
+        right: 0px;
+    }
+
+    .foto1{
+        width: 40px;
+        position: absolute;
+        top: 120px;
+        right: 40px;
+    }
+    .foto2{
+        width: 40px;
+        position: absolute;
+        top: 130px;
+        right: 40px;
+    }
+
+    .vogla1{
+        font-family: "Roboto Condensed", sans-serif;
+    }
