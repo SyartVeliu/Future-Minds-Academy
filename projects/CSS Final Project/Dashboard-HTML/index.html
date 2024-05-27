@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
+</head>
+
+<body>
+    <div id="sidebar" class="sidebar">
+        <div class="sidebar-overlay">
+            <ul class="nav">
+                <li><span class="first-text">
+                        <h2 style="display: inline;">CP&nbsp;<span id="cp">COOL&nbsp;PAGE</span></h2>
+
+                    </span></li>
+                <hr>
+                <div class="admin-profile">
+                    <img src="./assets/images/avatar.jpg" alt="admin profile">
+                    <span class="admin-details description">John&nbsp;Doe</span>
+                    <span class="material-icons down-arrow">keyboard_arrow_down</span>
+                </div>
+                <hr>
+                <li class="dashboard"> <a href="#" class="dashboard"><span class="material-icons">dashboard</span><span
+                            class="description">Dashboard</span></a></li>
+                <li> <a href="#"><span class="material-icons">image</span><span class="description"> Pages </span>
+                        <span class="material-icons down-arrow">keyboard_arrow_down</span></a></li>
+                <li> <a href="#"><span class="material-icons">apps</span> <span class="description"> Components </span>
+                        <span class="material-icons down-arrow">keyboard_arrow_down</span></a></li>
+                <li> <a href="#"><span class="material-icons">content_paste</span> <span class="description"> Forms
+                        </span>
+                        <span class="material-icons down-arrow">keyboard_arrow_down</span></a></li>
+                <li> <a href="#"><span class="material-icons">grid_on</span> <span class="description"> Tables </span>
+                        <span class="material-icons down-arrow">keyboard_arrow_down</span></a></li>
+                <li> <a href="#"><span class="material-icons">location_on</span> <span class="description"> Maps </span>
+                        <span class="material-icons down-arrow">keyboard_arrow_down</span></a></li>
+                <li> <a href="#"><span class="material-icons">widgets</span> <span class="description"> Widgets </span>
+                        <span class="material-icons down-arrow">keyboard_arrow_down</span></a></li>
+                <li> <a href="#"><span class="material-icons">trending_up</span> <span class="description"> Charts
+                        </span>
+                        <span class="material-icons down-arrow">keyboard_arrow_down</span></a></li>
+                <li> <a href="#"><span class="material-icons">date_range</span> <span class="description"> Calendar
+                        </span>
+                        <span class="material-icons down-arrow">keyboard_arrow_down</span></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="main-panel">
+        <nav class="top-navigation">
+            <div class="top-navigation-left">
+                <span class="material-icons circular" title="See more">more_vert</span>
+                <span class="page-title">Dashboard</span>
+            </div>
+            <div class="top-navigation-right">
+                <div class="search">
+                    <input type="text" placeholder="Search">
+                    <span class="material-icons circular" title="Search">search</span>
+                </div>
+                <span class="material-icons" title="Dashboard">dashboard</span>
+                <span class="icon-with-notification dropdown" data-notifications="5">
+                    <span class="material-icons" title="Notifications">notifications</span>
+                    <ul>
+                        <li>John Doe sent a message</li>
+                        <li>Someone viewed your profile</li>
+                        <li>John Doe sent a message</li>
+                        <li>Someone viewed your profile</li>
+                        <li>Another notification</li>
+                    </ul>
+                </span>
+                <span class="material-icons" title="Profile">person</span>
+            </div>
+            <span class="material-icons hamburger" title="Dashboard">menu</span>
+        </nav>
+        <main>
+            <div class="top-locations-widget">
+                <div class="top-locations-top">
+                    <span class="widget-icon material-icons"
+                        style="background: linear-gradient(60deg,#66bb6a,#43a047);">language</span>
+                    <h2>Global Sales by Top Locations</h2>
+                </div>
+                <div class="top-locations-bottom">
+                    <table class="countries-table">
+                        <tr>
+                            <td><img src="./assets/flags/US.jpg" alt="America Flag">&nbsp; USA</td>
+                            <td>2.920</td>
+                            <td>53.23%</td>
+                        </tr>
+                        <tr>
+                            <td><img src="./assets/flags/DE.jpg" alt="Germany Flag">&nbsp; Germany</td>
+                            <td>1.300</td>
+                            <td>4.34%</td>
+                        </tr>
+                        <tr>
+                            <td><img src="./assets/flags/AU.jpg" alt="Australia Flag">&nbsp; Australia</td>
+                            <td>760</td>
+                            <td>20.43%</td>
+                        </tr>
+                        <tr>
+                            <td><img src="./assets/flags/GB.jpg" alt="UK Flag">&nbsp; United Kingdom</td>
+                            <td>690</td>
+                            <td>10.35%</td>
+                        </tr>
+                        <tr>
+                            <td><img src="./assets/flags/RO.jpg" alt="Romania Flag">&nbsp; Romania</td>
+                            <td>600</td>
+                            <td>7.87%</td>
+                        </tr>
+                        <tr>
+                            <td><img src="./assets/flags/BR.jpg" alt="Brasil Flag">&nbsp; Brasil</td>
+                            <td>550</td>
+                            <td>5.94%</td>
+                        </tr>
+                    </table>
+                    <iframe class="map"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387191.0360450263!2d-74.30932624893725!3d40.6975399675532!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2s!4v1698407508030!5m2!1sen!2s"
+                        style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            <div class="widgets">
+                <div class="widget">
+                    <div class="widget-top">
+                        <span class="widget-icon material-icons"
+                            style="background: linear-gradient(60deg,#ffa726,#fb8c00);">weekend</span>
+                        <div class="widget-details">
+                            <h3>Bookings</h3>
+                            <span>184</span>
+                        </div>
+                    </div>
+                    <p class="widget-bottom">
+                        <span class="material-icons">warning</span> Get more space
+                    </p>
+                </div>
+                <div class="widget">
+                    <div class="widget-top">
+                        <span class="widget-icon material-icons"
+                            style="background: linear-gradient(60deg,#ec407a,#d81b60);">equalizer</span>
+                        <div class="widget-details">
+                            <h3>Website Visits</h3>
+                            <span>75.521</span>
+                        </div>
+                    </div>
+                    <p class="widget-bottom">
+                        <span class="material-icons">local_offer</span> Tracked from Google Analytics
+                    </p>
+                </div>
+                <div class="widget">
+                    <div class="widget-top">
+                        <span class="widget-icon material-icons"
+                            style="background: linear-gradient(60deg,#66bb6a,#43a047);">store</span>
+                        <div class="widget-details">
+                            <h3>Revenue</h3>
+                            <span>$34,245</span>
+                        </div>
+                    </div>
+                    <p class="widget-bottom">
+                        <span class="material-icons">date_range</span> Last 24 Hours
+                    </p>
+                </div>
+                <div class="widget">
+                    <div class="widget-top">
+                        <span class="widget-icon material-icons"
+                            style="background: linear-gradient(60deg,#26c6da,#00acc1);">public</span>
+                        <div class="widget-details">
+                            <h3>Followers</h3>
+                            <span>+245</span>
+                        </div>
+                    </div>
+                    <p class="widget-bottom">
+                        <span class="material-icons">update</span> Just Updated
+                    </p>
+                </div>
+            </div>
+            <div class="listings-container">
+                <h3>Manage Listings</h3>
+                <div class="listings">
+                    <div class="listing">
+                        <div class="listing-top">
+                            <div class="cards-hover">
+                                <img class="listing-image" src="assets/images/card-1.jpeg">
+                                <div class="listing-operations">
+                                    <span class="material-icons" title="View">art_track</span>
+                                    <span class="material-icons" style="color: rgb(77, 176, 77);" title="Edit">edit</span>
+                                    <span class="material-icons" style="color: rgb(182, 47, 47);" title="Delete">close</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="listing-description">
+                            <h3>Cozy 5 Stars Apartment</h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum sapiente, aliquam nobis
+                                eligendi incidunt obcaecati ex minima veniam velit libero.</p>
+                        </div>
+                        <div class="listing-bottom">
+                            <span>$899/night</span>
+                            <span><span class="material-icons">place</span>Barcelona, Spain</span>
+                        </div>
+                    </div>
+                    <div class="listing">
+                        <div class="listing-top">
+                            <div class="cards-hover">
+                                <img class="listing-image" src="assets/images/card-2.jpeg">
+                                <div class="listing-operations">
+                                    <span class="material-icons" title="View">art_track</span>
+                                    <span class="material-icons" style="color: rgb(77, 176, 77);" title="Edit">edit</span>
+                                    <span class="material-icons" style="color: rgb(182, 47, 47);" title="Delete">close</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="listing-description">
+                            <h3>Office Studio</h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni voluptas ullam delectus
+                                temporibus labore nihil!</p>
+                        </div>
+                        <div class="listing-bottom">
+                            <span>$1.119/night</span>
+                            <span><span class="material-icons">place</span>London, UK</span>
+                        </div>
+                    </div>
+                    <div class="listing">
+                        <div class="listing-top">
+                            <div class="cards-hover">
+                                <img class="listing-image" src="assets/images/card-3.jpeg">
+                                <div class="listing-operations">
+                                    <span class="material-icons" title="View">art_track</span>
+                                    <span class="material-icons" style="color: rgb(77, 176, 77);" title="Edit">edit</span>
+                                    <span class="material-icons" style="color: rgb(182, 47, 47);" title="Delete">close</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="listing-description">
+                            <h3>Beautiful Castle</h3>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum obcaecati sequi, ducimus
+                                laboriosam nulla hic perspiciatis dolores expedita iure consequuntur.</p>
+                        </div>
+                        <div class="listing-bottom">
+                            <span>$459/night</span>
+                            <span><span class="material-icons">place</span>Milan, Italy</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <nav>
+                <ul>
+                    <li><a href="">home</a></li>
+                    <li><a href="">company</a></li>
+                    <li><a href="">portfolio</a></li>
+                    <li><a href="">blog</a></li>
+                </ul>
+            </nav>
+            <p>
+                &copy; John Doe, 2023
+            </p>
+        </footer>
+    </div>
+</body>
+
+</html>
