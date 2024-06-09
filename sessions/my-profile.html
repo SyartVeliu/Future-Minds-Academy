@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile</title>
+</head>
+
+<body>
+    <h1 id="pjesa1">My Hajn</h1>
+
+    <div id="photo"><img src="images/hajni.png" width="250" alt=""></div>
+
+    <p class="bio">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, laudantium ea. Voluptate, sed error,
+        nesciunt
+        quaerat corporis similique illum earum enim, eius consectetur debitis officiis asperiores optio itaque repellat
+        minus.</p>
+
+    <button onclick="loadAvokado()">Avokado</button>
+    <button onclick="loadHajn()">Hajni</button>
+
+    <script>
+
+        function loadAvokado() {
+            const pjesa1 = document.querySelector('#pjesa1');
+            pjesa1.innerHTML = 'Syart Veliu';
+
+            const photo = document.querySelector('#photo');
+            photo.innerHTML = '<img src = "images/avokado.png" width="250" >';
+
+            const bio = document.querySelector('.bio');
+            bio.innerHTML = '<h3>Programmer edhe kengtar me raste!</h3>';
+        }
+
+    </script>
+
+</body>
+
+</html>

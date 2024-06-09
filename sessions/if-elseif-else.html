@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guessing Game</title>
+</head>
+
+    <h1>Guessing Game</h1>
+    <h3 id="guessMsg">Guess a number between 1 - 10: </h3>
+    <input type="text" id="userGuessNum">
+    <button onclick="guessMyNumber">Guess</button>
+
+<body>
+
+    <script>
+        // Math.random() * 10  --- chooses a number from 0 to 9
+        // Math.random() * 21 + 5  --- choose a number from 5 - 25
+        // Math.random() * 25 + 8  --- 8 - 32
+
+        const guessMsg = document.querySelector('#guessMsg');
+        const userGuessNum = document.querySelector('#userGuess');
+
+        const guessNumber = Math.floor(Math.random() * 10) + 1;
+        console.log("guessNumber: " + guessNumber);
+
+        let userGuess = parseInt(userGuessNum.value);
+        let run = 1;
+
+        while (run <= 3) 
+
+            if (userGuess.value) (userGuess < guessNumber) {
+                if (run != 3) {
+                    guessMsg = 'Guess Higheer:'
+                
+            else{
+                    console.log('You lost');
+                    break;
+                }
+            }
+            else if (userGuess > guessNumber) {
+                if (run != 3) {
+                    userGuess = parseInt(prompt('Guess Lower: '));
+                }
+                else {
+                    console.log('You lost');
+                    break;
+                }
+            }
+            else if (userGuess == guessNumber) {
+                console.log('Congratulations');
+                break;
+            }
+            else {
+                console.log('Game over');
+            }
+
+            run++;
+        }
+
+    </script>
+</body>
+
+</html>
