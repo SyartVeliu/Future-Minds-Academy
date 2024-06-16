@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplication Table</title>
+</head>
+<body>
+    
+    <table border="1" cellpadding="5">
+        <thead>
+            <tr>
+                <th>1 x i</th>
+                <th>2 x i</th>
+                <th>3 x i</th>
+                <th>4 x i</th>
+                <th>5 x i</th>
+                <th>6 x i</th>
+                <th>7 x i</th>
+                <th>8 x i</th>
+                <th>9 x i</th>
+                <th>10 x i</th>
+            </tr>
+        </thead>
+        <tbody id="multitable">
+            <tr>
+             
+            </tr>
+        </tbody>
+    </table>
+
+    <script>
+        const multitable = document.querySelector('#multitable');
+
+        for(let i=1; i<=10; i++){
+            multitable.innerHTML += `
+                <tr>
+                    <td>${1 * i}</td>
+                    <td>${2 * i}</td>
+                    <td>${3 * i}</td>
+                    <td>${4 * i}</td>
+                    <td>${5 * i}</td>
+                    <td>${6 * i}</td>
+                    <td>${7 * i}</td>
+                    <td>${8 * i}</td>
+                    <td>${9 * i}</td>
+                    <td>${10 * i}</td>
+                </tr>
+            `;
+        }
+    </script>
+</body>
+</html>
