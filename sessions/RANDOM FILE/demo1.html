@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo 1</title>
+    <style>
+        body {
+            padding: 30px;
+        }
+
+        div {
+            background-color: lightblue;
+            padding: 20px;
+            margin: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="select-box1">Select Box 1</button>
+    <button id="select-box2">Select Box 2</button>
+    <div id="box1">
+        <p>BOX 1</p>
+    </div>
+    <div id="box2">
+        <p>BOX 2</p>
+    </div>
+
+    <script>
+        const box1 = document.querySelector('#box1');
+        const box2 = document.querySelector('#box2');
+
+        console.log(box1.style);
+        console.log(box2.style);
+
+        const selectBox1Btn = document.querySelector('#select-box1');
+        const selectBox2Btn = document.querySelector('#select-box2');
+
+        selectBox1Btn.addEventListener('click', () => {
+            box2.style.transform = '';
+            box2.style.border = '';
+            box1.style.transform = 'scale(1.05)';
+            box1.style.border = '4px solid black';
+        });
+
+        selectBox2Btn.addEventListener('click', () => {
+            box1.style.transform = '';
+            box1.style.border = '';
+            box2.style.transform = 'scale(1.05)';
+            box2.style.border = '4px solid black';
+        });
+
+
+
+    </script>
+
+</body>
+
+</html>
