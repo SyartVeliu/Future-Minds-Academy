@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convert Euro to Dollar</title>
+</head>
+
+<body>
+    <script>
+        function convertEuroToDollar(euros, convertingRate) {
+            return euros * convertingRate;
+        }
+
+        let euros = prompt('Write amount of Euro:');
+        const convertingRate = 1.1;
+        const dollars = convertEuroToDollar(euros, convertingRate);
+
+        alert(`${euros} Euros is approximately ${dollars.toFixed(2)} Dollars.`);
+    </script>
+</body>
+
+</html>
