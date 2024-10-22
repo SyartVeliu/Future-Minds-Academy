@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Redirect</title>
+
+    
+    <script>
+        function redirectToWebsite() {
+            const website = prompt("Which website do you want to visit?");
+            if (website) {
+                location.href = `https://www.${website}.com`;
+            }
+        }
+    </script>
+
+
+</head>
+<body onload="redirectToWebsite()">
+    <h1>Welcome!</h1>
+    <p>If you entered a valid website, you should be redirected.</p>
+</body>
+</html>
