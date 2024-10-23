@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What's my grade?</title>
+</head>
+
+<body>
+    <script>
+        let input = prompt('Type your score from 1 to 100:');
+        let score = Number(input);
+        let grade;
+
+        if (isNaN(score) || score < 0 || score > 100) {
+            console.log('There was an error in your input');
+        } else {
+            if (score >= 0 && score <= 19) { grade = 1; }
+            else if (score >= 20 && score <= 39) { grade = 2; }
+            else if (score >= 40 && score <= 59) { grade = 3; }
+            else if (score >= 60 && score <= 79) { grade = 4; }
+            else if (score >= 80 && score <= 100) { grade = 5; }
+        }
+
+        console.log(`Your score is ${score}, which gives you a grade of ${grade}`);
+    </script>
+</body>
+
+</html>
