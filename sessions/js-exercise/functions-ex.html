@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="numbers">1</h1>
+    <button id="btnAdd">add</button>
+    <button id="btnSubtract">Subtract</button>
+    <script>
+        const btnAdd = document.getElementById('btnAdd');
+        const numbers = document.getElementById('numbers');
+        const btnSubtract = document.getElementById('btnSubtract');
+
+        let numChange = 1;
+
+
+        btnAdd.addEventListener('click', myFun)
+
+        function myFun() {
+            numbers.textContent = numChange;
+            numChange++;
+        }
+
+
+        btnSubtract.addEventListener('click', myFun2)
+
+        function myFun2() {
+            if(numCH != 0) {numCH--;}
+            numbers.textContent = numChange;
+            numChange--;
+        }
+
+
+
+    </script>
+</body>
+
+</html>
