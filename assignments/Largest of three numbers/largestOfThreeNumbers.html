@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Largest of three numbers</title>
+</head>
+
+<body>
+    <script>
+        function findLargest(a, b, c) {
+            return Math.max(a, b, c);
+        }
+        let a = parseInt(prompt('Write first number:'));
+        let b = parseInt(prompt('Wirte second number:'));
+        let c = parseInt(prompt('Write third number:'));
+
+        let largest = findLargest(a, b, c);
+
+        console.log('The largest number is: ' + largest);
+
+    </script>
+</body>
+
+</html>
