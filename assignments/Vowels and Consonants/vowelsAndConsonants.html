@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vowels and Consonants</title>
+</head>
+
+<body>
+    <script>
+        document.addEventListener('keypress', (e) => {
+            let letter = e.key;
+            if (letter.length === 1) {
+                const vowels = 'aeiouAEIOU';
+                const consonants = 'bcdfghjklmnpqrstvwxyzBCDFGHJKLMNPQRSTVWXYZ';
+
+                if (vowels.includes(letter)) {
+                    console.log(`${letter} is a vowel.`)
+                } else if (consonants.includes(letter)) {
+                    console.log(`${letter} is a consonant`);
+                } else if (!(isNaN(letter))) {
+                    console.log(`${letter} is a number.`);
+                } else {
+                    console.log(`${letter} is another symbol.`);
+                }
+            }
+            else {
+                console.log('Please write a single character.');
+            }
+        }
+        )
+    </script>
+</body>
+
+</html>
