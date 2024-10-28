@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boring Calculator</title>
+</head>
+
+<body>
+    <script>
+        function boringCalculator() {
+            const num1 = parseInt(prompt('Enter the first number:'));
+            const operator = prompt('Enter an operator:');
+            const num2 = parseInt(prompt('Enter the second number:'));
+            let result;
+
+            switch (operator) {
+                case '+':
+                    result = num1 + num2;
+                    break;
+                case '-':
+                    result = num1 - num2;
+                    break;
+                case '*':
+                    result = num1 * num2;
+                    break;
+                case '/':
+                    if (num2 !== 0) {
+                        result = num1 / num2;
+                    } else {
+                        result = 'Error: Division by zero is not allowed.'
+                    }
+                    break;
+                case '%':
+                    if (num2 !== 0) {
+                        result = num1 % num2;
+                    } else {
+                        result = 'Error: Division by zero is not allowed.';
+                    }
+                    break;
+
+                default:
+                    result = "Error: Invalid operator.";
+                    break;
+            }
+            console.log(`Result: ${result}`);
+        }
+
+
+        boringCalculator()
+    </script>
+</body>
+
+</html>
