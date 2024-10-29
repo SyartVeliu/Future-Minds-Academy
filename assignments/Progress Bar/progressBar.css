@@ -1,0 +1,56 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.progress-container {
+    width: 50px;
+    height: 300px;
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    position: relative;
+}
+
+.progress-bar {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background-color: green; /* Color for 0-50% */
+    transition: height 0.3s ease;
+}
+
+.progress-bar[data-percent='50'] {
+    background-color: yellow; /* Color for 50% */
+}
+
+.progress-bar[data-percent='51'], 
+.progress-bar[data-percent='80'] {
+    background-color: orange; /* Color for 51%-80% */
+}
+
+.progress-bar[data-percent='81'] {
+    background-color: red; /* Color for 81%-100% */
+}
+
+.tooltip {
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: black;
+    color: white;
+    padding: 5px;
+    border-radius: 3px;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.progress-bar:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+}
