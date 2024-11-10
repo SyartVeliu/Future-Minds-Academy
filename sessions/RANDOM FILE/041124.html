@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Betting Site</title>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+.bet-option {
+    background: #fff;
+    padding: 20px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #333;
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+</style>
+</head>
+<body>
+    <header>
+        <h1>Betting Site</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Sports</a></li>
+                <li><a href="#">Casino</a></li>
+                <li><a href="#">Account</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="betting-options">
+            <h2>Place Your Bets</h2>
+            <div class="bet-option">
+                <h3>Match 1: Team A vs Team B</h3>
+                <label>
+                    Bet Amount: <input type="number" id="bet-amount-1" placeholder="Enter amount">
+                </label>
+                <button onclick="placeBet('Match 1')">Place Bet</button>
+            </div>
+            <div class="bet-option">
+                <h3>Match 2: Team C vs Team D</h3>
+                <label>
+                    Bet Amount: <input type="number" id="bet-amount-2" placeholder="Enter amount">
+                </label>
+                <button onclick="placeBet('Match 2')">Place Bet</button>
+            </div>
+        </section>
+
+        <section id="bet-summary">
+            <h2>Your Bets</h2>
+            <ul id="summary-list"></ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Betting Site. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function placeBet(match) {
+    const betAmountInput = document.getElementById(`bet-amount-${match === 'Match 1' ? '1' : '2'}`);
+    const betAmount = betAmountInput.value;
+
+    if (betAmount <= 0) {
+        alert("Please enter a valid bet amount.");
+        return;
+    }
+
+    const summaryList = document.getElementById('summary-list');
+    const listItem = document.createElement('li');
+    listItem.textContent = `${match}: Bet Amount $${betAmount}`;
+    summaryList.appendChild(listItem);
+
+    betAmountInput.value = ''; // Clear input field
+}
+
+    </script>
+</body>
+</html>

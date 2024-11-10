@@ -43,7 +43,7 @@ body:has(#sidebar.collapsed){
 body>*:nth-child(1) {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
-}
+} 
 
 body>*:nth-child(2) {
     -ms-grid-row: 1;
@@ -104,7 +104,7 @@ h3{
     font-family: var(--default-font);
     margin: 10px 0px 0px;
     gap: 1rem;
-}
+} 
 
 .sidebar a:not(.dashboard):hover {
     background-color: rgba(255, 255, 255, 0.2);
@@ -238,7 +238,6 @@ ul img {
     display: none;
 }
 
-.dropdown ul:hover,
 .dropdown:hover ul {
     display: block;
 }

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja 'MACA MIU'</title>
+    <style>
+        canvas {
+            background-color: aquamarine;
+        }
+        #timerDV{
+            position: absolute;
+            top: 20px;
+            left: 20px
+        }
+        #pointsDV{
+            position: absolute;
+            top: 20px;
+            left: 720px;
+        }
+        #msg{
+            position: absolute;
+            top: 20px;
+            left: 350px;
+            font-weight: bold;
+        }
+        #restartBTN{
+            padding: 20px;
+            border: 2px solid black;
+            border-radius: 10px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+
+<body>
+    <canvas width="800" height="500" id="canvas"></canvas>
+    <div id="timerDV">Timer: 15</div>
+    <div id="msg"></div>
+    <div id="pointsDV">Points: 0</div>
+    <div>
+    <button id="restartBTN">Restart</button>        
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

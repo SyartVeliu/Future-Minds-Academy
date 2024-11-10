@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sum of numbers</title>
+</head>
+<body>
+    <script>
+        function sumPositiveNumbers() {
+    let totalSum = 0;
+
+    while (true) {
+        const input = prompt("Please enter a positive number (or 0 to finish):");
+
+        // Convert the input to a number
+        const number = parseFloat(input);
+
+        // Check if input is a valid number
+        if (isNaN(number)) {
+            alert("Invalid input. Please enter a numeric value.");
+            continue;
+        }
+
+        if (number < 0) {
+            alert("Please enter only positive numbers or 0 to finish.");
+        } else if (number === 0) {
+            break; // Exit the loop
+        } else {
+            totalSum += number; // Add to total sum
+        }
+    }
+
+    console.log(`The sum of the numbers you wrote is equal to ${totalSum}.`);
+}
+
+// Call the function to run the program
+sumPositiveNumbers();
+
+    </script>
+</body>
+</html>

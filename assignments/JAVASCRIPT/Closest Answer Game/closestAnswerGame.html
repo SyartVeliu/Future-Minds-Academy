@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Closest Answer Game</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.answer {
+    background-color: #e7f3fe;
+    padding: 10px;
+    border: 1px solid #b3d4fc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.results {
+    display: flex;
+    justify-content: space-between;
+}
+
+.player {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 48%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+    margin: 0;
+    color: #555;
+}
+
+p {
+    margin: 5px 0 0;
+    color: #333;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Closest Answer Game</h1>
+        <div class="answer">
+            <h2>Correct Answer: <span id="correctAnswer">42</span></h2>
+        </div>
+        <div class="results">
+            <div class="player">
+                <h3>Player 1</h3>
+                <p><span id="player1Score">38</span></p>
+            </div>
+            <div class="player">
+                <h3>Player 2</h3>
+                <p><span id="player2Score">45</span></p>
+            </div>
+        </div>
+    </div>
+ 
+    <script src="closestAnswerGame.js"></script>
+</body>
+</html>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Covers Store</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #4A6E4D;
+    padding: 20px;
+    color: white;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.social-media a {
+    margin-left: 15px;
+    color: white;
+    text-decoration: none;
+}
+
+.advertisement {
+    text-align: center;
+    background-color: #B2E4D7;
+    padding: 20px;
+}
+
+.ad-image {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.product-card {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    transition: box-shadow 0.3s;
+}
+
+.product-card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.product-card h2 {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #4A6E4D;
+}
+
+.product-card p {
+    font-size: 16px;
+    color: #2C3E50;
+}
+
+.product-card button {
+    background-color: #4A6E4D;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.product-card button:hover {
+    background-color: #3B5A3A;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Car Covers</div>
+        <div class="social-media">
+            <a href="#">FB</a>
+            <a href="#">IG</a>
+            <a href="#">TW</a>
+        </div>
+    </header>
+
+    <section class="advertisement">
+        <h2>Discover Our Latest Car Covers!</h2>
+        <img src="ad-image.jpg" alt="Advertisement" class="ad-image">
+    </section>
+
+    <main>
+        <div class="product-grid">
+            <!-- Product Cards -->
+            <div class="product-card">
+                <img src="product1.jpg" alt="Car Cover 1">
+                <h2>Car Cover Model 1</h2>
+                <p>$29.99</p>
+                <button>Buy Now</button>
+                
+            </div>
+            <div class="product-card">
+                <img src="product2.jpg" alt="Car Cover 2">
+                <h2>Car Cover Model 2</h2>
+                <p>$39.99</p>
+                <button>Buy Now</button>
+            </div>
+            <div class="product-card">
+                <img src="product3.jpg" alt="Car Cover 3">
+                <h2>Car Cover Model 3</h2>
+                <p>$49.99</p>
+                <button>Buy Now</button>
+            </div>
+            <div class="product-card">
+                <img src="product4.jpg" alt="Car Cover 4">
+                <h2>Car Cover Model 4</h2>
+                <p>$59.99</p>
+                <button>Buy Now</button>
+            </div>
+            <div class="product-card">
+                <img src="product5.jpg" alt="Car Cover 5">
+                <h2>Car Cover Model 5</h2>
+                <p>$69.99</p>
+                <button>Buy Now</button>
+            </div>
+            <div class="product-card">
+                <img src="product6.jpg" alt="Car Cover 6">
+                <h2>Car Cover Model 6</h2>
+                <p>$79.99</p>
+                <button>Buy Now</button>
+            </div>
+            <div class="product-card">
+                <img src="product7.jpg" alt="Car Cover 7">
+                <h2>Car Cover Model 7</h2>
+                <p>$89.99</p>
+                <button>Buy Now</button>
+            </div>
+            <div class="product-card">
+                <img src="product8.jpg" alt="Car Cover 8">
+                <h2>Car Cover Model 8</h2>
+                <p>$99.99</p>
+                <button>Buy Now</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Car Covers Store. All rights reserved.</p>
+    </footer>
+</body>
+</html>
