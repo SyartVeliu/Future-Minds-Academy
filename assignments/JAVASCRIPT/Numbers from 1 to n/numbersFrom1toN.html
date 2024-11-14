@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Numbers from 1 to n</title>
+</head>
+
+<body>
+    <script>
+        let num = parseInt(prompt("Enter a number between 1 and 100:"));
+
+
+        let resultString = "";
+
+
+        for (let i = 1; i <= num; i++) {
+
+            if (i === num) {
+                resultString += i;
+            } else {
+                resultString += i + ", ";
+            }
+        }
+
+        console.log(resultString);
+    </script>
+</body>
+
+</html>

@@ -1,3 +1,5 @@
+
+
 let answer = Math.floor(Math.random() * 20) + 1;
 
 let playerOne = parseInt(prompt('Player One:'));
@@ -19,6 +21,7 @@ if (playerOneDistance < playerTwoDistance) {
 } else {
     winner = "playerTwo";
 }
+
 
 console.log(`The correct answer is ${answer}`);
 console.log(`The winner is ${winner}`);
