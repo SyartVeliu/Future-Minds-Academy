@@ -13,7 +13,18 @@ let allData = [
     }
 ];
 
+let objMovie = {};
+objMovie.year = "2030";
+objMovie.name = "Shqiptaret e pare ne Hone";
+objMovie.thumb = "the=taste-of-things.jpeg";
+objMovie.reviews = "444";
+
+allData.push(objMovie);
+
 const allMovies = document.querySelector("#allMovies");
+const addBTN = document.querySelector("#addBTN");
+const movieModal = document.querySelector("#movieModal");
+const cancelBTN = document.querySelector("#cancelBTN");
 
 let recordsHTML = '';
 for(let i=0; i<allData.length; i++){
@@ -34,3 +45,11 @@ for(let i=0; i<allData.length; i++){
 }
 
 allMovies.innerHTML = recordsHTML;
+
+addBTN.addEventListener("click", ()=>{
+    movieModal.style.display = "block";
+});
+
+cancelBTN.addEventListener("click", ()=>{
+    movieModal.style.display = "none";
+});

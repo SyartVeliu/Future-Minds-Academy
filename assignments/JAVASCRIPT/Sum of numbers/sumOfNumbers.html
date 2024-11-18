@@ -7,35 +7,22 @@
 </head>
 <body>
     <script>
-        function sumPositiveNumbers() {
-    let totalSum = 0;
+        let total = 0;
 
-    while (true) {
-        const input = prompt("Please enter a positive number (or 0 to finish):");
-
-        // Convert the input to a number
-        const number = parseFloat(input);
-
-        // Check if input is a valid number
-        if (isNaN(number)) {
-            alert("Invalid input. Please enter a numeric value.");
-            continue;
-        }
-
-        if (number < 0) {
-            alert("Please enter only positive numbers or 0 to finish.");
-        } else if (number === 0) {
-            break; // Exit the loop
-        } else {
-            totalSum += number; // Add to total sum
-        }
+while (true) {
+    let userInput = prompt("Please enter a positive number (or 0 to finish):");
+    let number = parseInt(userInput);
+    
+    if (number === 0) {
+        break;
+    } else if (number > 0) {
+        total += number;
+    } else {
+        console.log("Please enter a positive number.");
     }
-
-    console.log(`The sum of the numbers you wrote is equal to ${totalSum}.`);
 }
 
-// Call the function to run the program
-sumPositiveNumbers();
+console.log(`The sum of the numbers you wrote is equal to ${total}.`);
 
     </script>
 </body>

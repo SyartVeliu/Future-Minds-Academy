@@ -1,4 +1,7 @@
-
+const correctAnswer = document.querySelector("#correctAnswer");
+const player1Score = document.querySelector("#player1Score");
+const player2Score = document.querySelector("#player2Score");
+const thewinner = document.querySelector("#thewinner");
 
 let answer = Math.floor(Math.random() * 20) + 1;
 
@@ -22,6 +25,10 @@ if (playerOneDistance < playerTwoDistance) {
     winner = "playerTwo";
 }
 
-
 console.log(`The correct answer is ${answer}`);
 console.log(`The winner is ${winner}`);
+
+correctAnswer.innerHTML = `${answer}`;
+player1Score.innerHTML = playerOne;
+player2Score.innerHTML = playerTwo;
+thewinner.innerHTML = `The winner is ${winner}`;
