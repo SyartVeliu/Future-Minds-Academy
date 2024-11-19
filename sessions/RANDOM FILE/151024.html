@@ -7,22 +7,29 @@
 </head>
 <body>
     <script>
-let letter = prompt('Write a letter');
-let vowels = 'aeiouy';
+let totalSum = 0;  // Initialize the sum to 0
 
-letter = letter.toLowerCase();
+// Use a loop to continuously ask the user for input
+while (true) {
+    // Prompt the user to enter a number
+    let userInput = prompt("Please enter a positive number (or 0 to finish):");
+    let number = parseInt(userInput);  // Convert the input to an integer
+    
+    // If the user enters 0, break the loop
+    if (number === 0) {
+        break;
+    } else if (number > 0) {
+        // Add the number to the total sum if it's positive
+        totalSum += number;
+    } else {
+        // If the number is negative, notify the user
+        console.log("Please enter a positive number.");
+    }
+}
 
-if (letter.length !== 1) {
-    console.log('Please write only one letter');
-}
-else {
-    if (vowels.includes(letter)) {
-        console.log('The letter you typed is a vowel!');
-    }
-    else {
-        console.log('The letter you typed is NOT a vowel!');
-    }
-}
+// Output the total sum after the loop finishes
+console.log(`The sum of the numbers you wrote is equal to ${totalSum}.`);
+
     </script>
 </body>
 </html>
