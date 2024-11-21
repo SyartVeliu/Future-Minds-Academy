@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="titulli">Maximum of 3 tries</title>
+</head>
+
+<body>
+    <script>
+        let correctPassword = "syart";
+        let maxTries = 3;
+        let tries = 0;
+        let userInput;
+
+        do {
+            let remainingTries = maxTries - tries;
+            userInput = prompt(`Please, enter your password (${remainingTries} ${remainingTries === 1 ? 'try' : 'tries'} left):`);
+            tries++;
+
+            if (userInput === correctPassword) {
+                alert("Welcome!");
+                break;
+            }
+
+            if (tries === maxTries) {
+                alert("You can't try anymore!");
+            }
+        } while (tries < maxTries);
+
+    </script>
+</body>
+
+</html>
